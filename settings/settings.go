@@ -15,6 +15,8 @@ type AppConfig struct {
 	Mode         string `mapstructure:"mode"`
 	Version      string `mapstructure:"version"`
 	Port         int    `mapstructure:"port"`
+	StartTime    string `mapstructure:"start_time"`
+	MachineID    int    `mapstructure:"Machine_id"`
 	*LogConfig   `mapstructure:"log"`
 	*MySQLConfig `mapstructure:"mysql"`
 	*RedisConfig `mapstructure:"redis"`
@@ -48,7 +50,7 @@ type RedisConfig struct {
 
 func Init() (err error) {
 
-	viper.SetConfigFile("config.json")
+	viper.SetConfigFile("config.yaml")
 	//viper.SetConfigName("config") // 指定配置文件名称（不需要带后缀）
 	//viper.SetConfigType("yaml")   // 指定配置文件类型(专用于从远程获取配置信息时指定配置文件类型的)
 	viper.AddConfigPath(".")   // 指定查找配置文件的路径（这里使用相对路径）

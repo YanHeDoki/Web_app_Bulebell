@@ -14,6 +14,7 @@ import (
 	"web_app/logger"
 	"web_app/routes"
 	"web_app/settings"
+	"web_app/snowflake"
 
 	"go.uber.org/zap"
 )
@@ -49,7 +50,14 @@ func main() {
 	defer redis.Close()
 	// 5. 注册路由
 	r := routes.Setup(settings.Conf.Mode)
-	// 6. 启动服务（优雅关机）
+
+	// 6.初始化雪花算法
+
+	if err := snowflake.Init(settings.Conf.StartTime, int64(settings.Conf.MachineID)); err != nil {
+		fmt.Println("Init snowflake err :", err)
+		return
+	}
+	// 7. 启动服务（优雅关机）
 	fmt.Println(settings.Conf.Port)
 	srv := &http.Server{
 		Addr:    fmt.Sprintf(":%d", settings.Conf.Port),
