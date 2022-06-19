@@ -15,6 +15,7 @@ import (
 	"web_app/routes"
 	"web_app/settings"
 	"web_app/snowflake"
+	"web_app/utils"
 
 	"go.uber.org/zap"
 )
@@ -57,6 +58,13 @@ func main() {
 		fmt.Println("Init snowflake err :", err)
 		return
 	}
+
+	//初始化错误翻译
+	if err := utils.InitTrans("zh"); err != nil {
+		fmt.Println("Init trans err :", err)
+		return
+	}
+
 	// 7. 启动服务（优雅关机）
 	fmt.Println(settings.Conf.Port)
 	srv := &http.Server{

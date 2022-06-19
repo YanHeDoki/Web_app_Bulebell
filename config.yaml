@@ -12,15 +12,15 @@ log:
   max_backups: 7
 mysql:
   host: "127.0.0.1"
-  port: 13306
+  port: 3306
   user: "root"
-  password: "root1234"
-  dbname: "sql_demo"
+  password: "123456"
+  dbname: "bluebell"
   max_open_conns: 200
   max_idle_conns: 50
 redis:
   host: "127.0.0.1"
-  port: 16379
+  port: 6379
   password: ""
   db: 0
   pool_size: 100
