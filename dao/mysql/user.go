@@ -2,12 +2,19 @@ package mysql
 
 import (
 	"crypto/md5"
+	"database/sql"
 	"encoding/hex"
 	"errors"
 	"math/rand"
 	"strings"
 	"time"
 	"web_app/models"
+)
+
+var (
+	ErrUserExist    = errors.New("用户已经存在")
+	ErrUserNotExist = errors.New("用户不存在")
+	ErrInvalidParam = errors.New("密码或者用户名错误")
 )
 
 //CheckUserExist 检查用户是否存在
@@ -19,7 +26,7 @@ func CheckUserExist(username string) error {
 		return err
 	}
 	if count > 0 {
-		return errors.New("用户已经存在")
+		return ErrUserExist
 	}
 	return nil
 }
@@ -37,6 +44,29 @@ func InsertUser(user *models.User) error {
 	return err
 }
 
+//登入函数
+func Login(p *models.User) error {
+	u := &models.User{}
+	sqlstr := "select user_id,username,password,salt from user where username=?"
+	err := db.Get(u, sqlstr, p.Username)
+	if err == sql.ErrNoRows {
+		return ErrUserNotExist
+	}
+	if err != nil {
+		//用户名查询错误
+		return err
+	}
+
+	//密码的判断
+	p.Password = loginEncryptPassword(p.Password, u.Salt)
+	if p.Password != u.Password {
+		return ErrInvalidParam
+	}
+
+	return nil
+}
+
+//注册时候返回md5加密和随机的盐
 func encryptPassword(pwd string) []string {
 	h := md5.New()
 	salt := getRandstring()
@@ -44,6 +74,15 @@ func encryptPassword(pwd string) []string {
 	return []string{hex.EncodeToString(h.Sum([]byte(pwd))), salt}
 }
 
+//loginEncryptPassword 登入时候校验密码使用数据库中的盐
+func loginEncryptPassword(pwd, salt string) string {
+
+	h := md5.New()
+	h.Write([]byte(salt))
+	return hex.EncodeToString(h.Sum([]byte(pwd)))
+}
+
+//获取随机的字符串
 func getRandstring() string {
 
 	char := "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"

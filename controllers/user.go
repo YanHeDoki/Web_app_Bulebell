@@ -1,10 +1,11 @@
 package controllers
 
 import (
+	"errors"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"go.uber.org/zap"
-	"net/http"
+	"web_app/dao/mysql"
 	"web_app/logic"
 	"web_app/models"
 	"web_app/utils"
@@ -22,15 +23,11 @@ func SignUpHandler(c *gin.Context) {
 		//参数错误直接返回
 		errs, ok := err.(validator.ValidationErrors)
 		if !ok {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": err.Error(),
-			})
+			ResponseError(c, CodeInvalidParam)
 			return
 		}
+		ResponseErrorWithMsg(c, CodeInvalidParam, utils.RemoveTopStruct(errs.Translate(utils.Trans)))
 
-		c.JSON(http.StatusOK, gin.H{
-			"msg": utils.RemoveTopStruct(errs.Translate(utils.Trans)),
-		})
 		return
 	}
 	//2.参数处理
@@ -47,12 +44,52 @@ func SignUpHandler(c *gin.Context) {
 	//3.业务处理
 	if err := logic.SignUp(p); err != nil {
 
-		c.JSON(http.StatusOK, gin.H{
-			"msg": "用户注册失败" + err.Error(),
-		})
+		zap.L().Error("signup err:", zap.Error(err))
+		if errors.Is(err, mysql.ErrUserExist) {
+			ResponseError(c, CodeUserExit)
+		}
+		ResponseError(c, CodeServerBusy)
 		return
 	}
 
 	//4.返回响应
-	c.JSONP(http.StatusOK, "ok")
+	ResponseSuccess(c, nil)
+}
+
+func LoginHandler(c *gin.Context) {
+
+	//请求参数处理以及校验
+	p := &models.ParamLogin{}
+	if err := c.ShouldBindJSON(p); err != nil {
+
+		zap.L().Error("login with ShouldBindJSON err:", zap.Error(err))
+
+		//参数错误直接返回
+		errs, ok := err.(validator.ValidationErrors)
+		if !ok {
+			ResponseError(c, CodeInvalidParam)
+			return
+		}
+
+		ResponseErrorWithMsg(c, CodeInvalidParam, utils.RemoveTopStruct(errs.Translate(utils.Trans)))
+
+		return
+	}
+
+	//业务逻辑处理
+	token, err := logic.Login(p)
+	if err != nil {
+
+		zap.L().Error("login.login failed", zap.Error(err))
+
+		if errors.Is(err, mysql.ErrUserNotExist) {
+			ResponseError(c, CodeUserNotExit)
+		}
+		ResponseError(c, CodeInvalidParam)
+		return
+	}
+
+	//返回响应
+	ResponseSuccess(c, token)
+
 }

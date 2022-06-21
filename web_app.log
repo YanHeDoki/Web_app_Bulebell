@@ -111,3 +111,27 @@
 {"level":"INFO","time":"2022-06-18T21:58:58.663+0800","caller":"logger/logger.go:70","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0033286}
 {"level":"INFO","time":"2022-06-18T22:00:59.022+0800","caller":"bluebell/main.go:90","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2022-06-18T22:00:59.030+0800","caller":"bluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-19T09:09:48.281+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-06-19T09:10:04.477+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-06-19T09:10:17.341+0800","caller":"controllers/user.go:20","msg":"ShouldBindJSON err:","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2022-06-19T09:10:17.341+0800","caller":"logger/logger.go:82","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0005177}
+{"level":"INFO","time":"2022-06-19T09:20:29.217+0800","caller":"bluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-19T09:20:29.232+0800","caller":"bluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-19T17:34:29.940+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"ERROR","time":"2022-06-19T17:34:47.270+0800","caller":"controllers/user.go:86","msg":"login.login failed","error":"missing destination name salt in *models.User"}
+{"level":"INFO","time":"2022-06-19T17:34:47.271+0800","caller":"logger/logger.go:82","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0424376}
+{"level":"INFO","time":"2022-06-19T17:36:22.588+0800","caller":"bluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-19T17:36:22.596+0800","caller":"bluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-19T17:36:25.193+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-19T17:36:28.456+0800","caller":"logger/logger.go:82","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0013431}
+{"level":"ERROR","time":"2022-06-19T17:36:39.843+0800","caller":"controllers/user.go:86","msg":"login.login failed","error":"用户不存在"}
+{"level":"INFO","time":"2022-06-19T17:36:39.843+0800","caller":"logger/logger.go:82","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0005088}
+{"level":"INFO","time":"2022-06-19T20:07:43.155+0800","caller":"bluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-19T20:07:43.168+0800","caller":"bluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-20T17:27:55.293+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-20T17:28:16.507+0800","caller":"logger/logger.go:82","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0367103}
+{"level":"INFO","time":"2022-06-20T21:34:46.918+0800","caller":"bluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-20T21:34:46.919+0800","caller":"bluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-20T21:39:40.396+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-20T21:45:54.052+0800","caller":"bluebell/main.go:90","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-20T21:45:54.056+0800","caller":"bluebell/main.go:99","msg":"Server exiting"}

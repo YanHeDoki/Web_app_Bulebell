@@ -4,6 +4,7 @@ import (
 	"web_app/dao/mysql"
 	"web_app/models"
 	"web_app/snowflake"
+	"web_app/utils"
 )
 
 func SignUp(p *models.ParamSignUp) error {
@@ -29,4 +30,18 @@ func SignUp(p *models.ParamSignUp) error {
 		return err
 	}
 	return nil
+}
+
+func Login(p *models.ParamLogin) (token string, err error) {
+
+	//用户实例
+	u := &models.User{Username: p.Username, Password: p.Password}
+
+	//登入逻辑
+	if err = mysql.Login(u); err != nil {
+		//登入失败
+		return "", err
+	}
+
+	return utils.GenToken(u.UserId, u.Username)
 }
