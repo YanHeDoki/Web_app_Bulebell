@@ -135,3 +135,104 @@
 {"level":"DEBUG","time":"2022-06-20T21:39:40.396+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
 {"level":"INFO","time":"2022-06-20T21:45:54.052+0800","caller":"bluebell/main.go:90","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2022-06-20T21:45:54.056+0800","caller":"bluebell/main.go:99","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-21T23:29:47.313+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"DEBUG","time":"2022-06-22T11:00:49.839+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:00:53.772+0800","caller":"logger/logger.go:82","msg":"/login","status":404,"method":"GET","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:01:14.980+0800","caller":"logger/logger.go:82","msg":"/login","status":404,"method":"GET","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:01:44.928+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":404,"method":"GET","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:01:54.262+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":404,"method":"GET","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:02:09.005+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0146709}
+{"level":"INFO","time":"2022-06-22T11:02:34.596+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":404,"method":"POST","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:02:44.916+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:03:04.785+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":404,"method":"GET","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:03:07.519+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0009075}
+{"level":"INFO","time":"2022-06-22T11:03:30.123+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:08:31.121+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0001793}
+{"level":"INFO","time":"2022-06-22T11:08:39.202+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:08:39.203+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:08:42.030+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:08:56.403+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:09:03.552+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:09:32.414+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":404,"method":"GET","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:09:36.138+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0018877}
+{"level":"INFO","time":"2022-06-22T11:09:49.938+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0010334}
+{"level":"INFO","time":"2022-06-22T11:09:54.363+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:10:36.109+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:12:19.720+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0007951}
+{"level":"INFO","time":"2022-06-22T11:12:47.036+0800","caller":"logger/logger.go:82","msg":"/api/v1/cmmounity","status":404,"method":"GET","path":"/api/v1/cmmounity","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:13:12.004+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:16:43.487+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:16:43.494+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:16:46.262+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:16:50.411+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0084842}
+{"level":"INFO","time":"2022-06-22T11:18:09.281+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:18:09.287+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:18:12.198+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:18:23.042+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0012328}
+{"level":"INFO","time":"2022-06-22T11:18:55.304+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0009826}
+{"level":"INFO","time":"2022-06-22T11:19:27.757+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:19:27.768+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:19:30.299+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:20:01.337+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0000171}
+{"level":"INFO","time":"2022-06-22T11:45:00.742+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0015185}
+{"level":"INFO","time":"2022-06-22T11:45:27.221+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0002827}
+{"level":"INFO","time":"2022-06-22T11:46:46.526+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:46:46.539+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:46:49.128+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:46:51.160+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0002199}
+{"level":"INFO","time":"2022-06-22T11:47:38.421+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:47:38.432+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:47:41.256+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:47:41.602+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0005084}
+{"level":"INFO","time":"2022-06-22T11:47:44.981+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0006851}
+{"level":"INFO","time":"2022-06-22T11:50:12.681+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:50:12.690+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:50:15.373+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:50:32.348+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0005127}
+{"level":"INFO","time":"2022-06-22T11:53:52.949+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0007076}
+{"level":"INFO","time":"2022-06-22T11:54:06.945+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:54:06.955+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:54:09.557+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:54:13.962+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:54:38.052+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0014058}
+{"level":"INFO","time":"2022-06-22T11:54:51.449+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:55:10.777+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:55:10.789+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:55:13.332+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:55:18.910+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0005212}
+{"level":"INFO","time":"2022-06-22T11:56:51.015+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0016083}
+{"level":"INFO","time":"2022-06-22T11:57:07.389+0800","caller":"logger/logger.go:82","msg":"/api/v1/lcommunity","status":404,"method":"GET","path":"/api/v1/lcommunity","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T11:57:34.013+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0000966}
+{"level":"INFO","time":"2022-06-22T11:58:06.394+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T11:58:06.397+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T11:58:09.087+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T11:58:22.594+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0005081}
+{"level":"INFO","time":"2022-06-22T12:00:47.576+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T12:00:47.579+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T12:00:50.270+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T12:00:51.719+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0002856}
+{"level":"INFO","time":"2022-06-22T12:52:41.960+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":404,"method":"GET","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0}
+{"level":"INFO","time":"2022-06-22T12:52:45.338+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0008084}
+{"level":"INFO","time":"2022-06-22T12:53:14.947+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.00022}
+{"level":"INFO","time":"2022-06-22T13:08:09.408+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T13:08:09.419+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T13:08:11.433+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T13:08:33.372+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0010735}
+{"level":"INFO","time":"2022-06-22T13:08:49.870+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0009718}
+{"level":"INFO","time":"2022-06-22T13:10:12.574+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T13:10:12.582+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T13:10:15.222+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T13:10:17.133+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0005066}
+{"level":"INFO","time":"2022-06-22T13:10:26.261+0800","caller":"logger/logger.go:82","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.002075}
+{"level":"INFO","time":"2022-06-22T13:10:44.720+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0001806}
+{"level":"INFO","time":"2022-06-22T13:11:36.940+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0011873}
+{"level":"INFO","time":"2022-06-22T13:11:37.561+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0016045}
+{"level":"INFO","time":"2022-06-22T13:11:37.908+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0007961}
+{"level":"INFO","time":"2022-06-22T13:11:41.598+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T13:11:41.600+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
+{"level":"DEBUG","time":"2022-06-22T13:11:43.880+0800","caller":"bluebell/main.go:39","msg":"logger init success..."}
+{"level":"INFO","time":"2022-06-22T13:11:47.955+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0013599}
+{"level":"INFO","time":"2022-06-22T13:11:48.296+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0010621}
+{"level":"INFO","time":"2022-06-22T13:11:50.007+0800","caller":"logger/logger.go:82","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.28.4","errors":"","cost":0.0004899}
+{"level":"INFO","time":"2022-06-22T13:13:07.931+0800","caller":"bluebell/main.go:91","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2022-06-22T13:13:07.945+0800","caller":"bluebell/main.go:100","msg":"Server exiting"}
