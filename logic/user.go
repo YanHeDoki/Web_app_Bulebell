@@ -32,7 +32,7 @@ func SignUp(p *models.ParamSignUp) error {
 	return nil
 }
 
-func Login(p *models.ParamLogin) (token string, err error) {
+func Login(p *models.ParamLogin) (user *models.User, err error) {
 
 	//用户实例
 	u := &models.User{Username: p.Username, Password: p.Password}
@@ -40,8 +40,13 @@ func Login(p *models.ParamLogin) (token string, err error) {
 	//登入逻辑
 	if err = mysql.Login(u); err != nil {
 		//登入失败
-		return "", err
+		return nil, err
 	}
 
-	return utils.GenToken(u.UserId, u.Username)
+	token, err := utils.GenToken(u.UserId, u.Username)
+	if err != nil {
+		return nil, err
+	}
+	u.Token = token
+	return u, nil
 }

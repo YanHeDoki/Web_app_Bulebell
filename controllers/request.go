@@ -8,8 +8,8 @@ import (
 var ErrorUserNotLogin = errors.New("用户未登录")
 var ContextUserIDKey = "userid"
 
-//GetCurrentUser 通过这个函数快速获取用户id
-func GetCurrentUser(c *gin.Context) (int64, error) {
+//GetCurrentUserID 通过这个函数快速获取用户id
+func GetCurrentUserID(c *gin.Context) (int64, error) {
 
 	uid, ok := c.Get(ContextUserIDKey)
 	if !ok {

@@ -21,3 +21,18 @@ func GetCommunityAll() ([]*models.Community, error) {
 	}
 	return communities, err
 }
+
+//GetCommunityDetailById 根据id查询社区分类详情
+func GetCommunityDetailById(id int64) (*models.CommunityDetail, error) {
+
+	sqlstr := "select community_id,community_name,introduction,create_time from community where community_id=?"
+
+	c := &models.CommunityDetail{}
+	err := db.Get(c, sqlstr, id)
+	if err != nil {
+		if err == sql.ErrNoRows {
+			return nil, ErrInvalidiID
+		}
+	}
+	return c, err
+}

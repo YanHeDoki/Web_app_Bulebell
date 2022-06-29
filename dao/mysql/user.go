@@ -4,18 +4,13 @@ import (
 	"crypto/md5"
 	"database/sql"
 	"encoding/hex"
-	"errors"
 	"math/rand"
 	"strings"
 	"time"
 	"web_app/models"
 )
 
-var (
-	ErrUserExist    = errors.New("用户已经存在")
-	ErrUserNotExist = errors.New("用户不存在")
-	ErrInvalidParam = errors.New("密码或者用户名错误")
-)
+var secret = []byte("雪下的是盐")
 
 //CheckUserExist 检查用户是否存在
 func CheckUserExist(username string) error {
@@ -62,8 +57,19 @@ func Login(p *models.User) error {
 	if p.Password != u.Password {
 		return ErrInvalidParam
 	}
+	p.UserId = u.UserId
 
 	return nil
+}
+func GetUserById(id int64) (string, error) {
+
+	sqlstr := "select username from user where user_id=?"
+	var name string
+	err := db.Get(&name, sqlstr, id)
+	if err != nil {
+		return "", err
+	}
+	return name, nil
 }
 
 //注册时候返回md5加密和随机的盐
@@ -71,6 +77,7 @@ func encryptPassword(pwd string) []string {
 	h := md5.New()
 	salt := getRandstring()
 	h.Write([]byte(salt))
+	h.Write(secret)
 	return []string{hex.EncodeToString(h.Sum([]byte(pwd))), salt}
 }
 
@@ -79,6 +86,7 @@ func loginEncryptPassword(pwd, salt string) string {
 
 	h := md5.New()
 	h.Write([]byte(salt))
+	h.Write(secret)
 	return hex.EncodeToString(h.Sum([]byte(pwd)))
 }
 

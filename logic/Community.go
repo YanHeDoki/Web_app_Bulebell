@@ -11,3 +11,10 @@ func GetCommunityList() ([]*models.Community, error) {
 	return mysql.GetCommunityAll()
 
 }
+
+//GetCommunityDetail 获取社区详情
+func GetCommunityDetail(id int64) (*models.CommunityDetail, error) {
+
+	return mysql.GetCommunityDetailById(id)
+
+}
